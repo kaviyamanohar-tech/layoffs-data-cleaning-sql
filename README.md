@@ -1,81 +1,69 @@
-# Layoffs Data Cleaning Project
+# Company Layoffs Data Analysis Using SQL
 
 ## 📌 Project Overview
 
-This project focuses on cleaning and preparing a layoffs dataset using SQL and MySQL Workbench.
+This project focuses on cleaning and exploring a company layoffs dataset using SQL and MySQL Workbench.
 
-The objective is to transform raw and inconsistent data into a clean and structured dataset that can be used for further analysis and visualization.
+The objective is to clean raw data, identify layoff trends, and analyze workforce reductions across companies, industries, countries, and time periods.
 
 ## 🛠️ Tools Used
 
-- MySQL
-- MySQL Workbench
-- SQL
+* MySQL
+* MySQL Workbench
+* SQL
 
 ## 📊 Dataset
 
-The dataset contains information about layoffs, including:
+The dataset contains information about company layoffs, including company names, industries, locations, total layoffs, percentage laid off, dates, company stages, countries, and funds raised.
 
-- Company
-- Location
-- Industry
-- Total Laid Off
-- Percentage Laid Off
-- Date
-- Stage
-- Country
-- Funds Raised
+## 🧹 Data Cleaning
 
-## 🧹 Data Cleaning Process
+* Created a staging table to preserve the raw data.
+* Identified and removed duplicate records.
+* Standardized company names, industries, and country values.
+* Handled NULL and missing values.
+* Converted date values into the correct format.
+* Removed unnecessary records and verified the cleaned dataset.
 
-The following steps were performed during the data cleaning process:
+## 🔍 Exploratory Data Analysis
 
-1. Created a staging table to work with the raw data.
-2. Identified duplicate records.
-3. Removed duplicate records.
-4. Standardized company names and text values.
-5. Cleaned and standardized industry values.
-6. Cleaned country values.
-7. Handled NULL and missing values.
-8. Converted date values into a proper date format.
-9. Removed unnecessary or invalid records.
-10. Verified the cleaned dataset.
+* Identified companies with the highest total layoffs.
+* Analyzed layoffs by industry, country, and company stage.
+* Examined yearly and monthly layoff trends.
+* Identified companies with 100% layoffs.
+* Analyzed average layoff percentages by company.
+* Calculated rolling totals to track cumulative layoffs over time.
+* Ranked the top five companies by layoffs for each year.
 
-## 🔍 SQL Techniques Used
+## 💻 SQL Skills Demonstrated
 
-- SELECT
-- WHERE
-- UPDATE
-- DELETE
-- CASE statements
-- JOIN
-- CTE
-- ROW_NUMBER()
-- PARTITION BY
-- TRIM()
-- STR_TO_DATE()
-- NULL handling
+* Aggregate functions: `SUM()`, `AVG()`, `MIN()`, `MAX()`
+* Data manipulation: `UPDATE`, `DELETE`
+* Data cleaning and NULL handling
+* `GROUP BY`, `ORDER BY`, and `CASE`
+* Common Table Expressions (CTEs)
+* Window functions: `SUM() OVER()`
+* Ranking using `DENSE_RANK()` and `PARTITION BY`
+* Date functions and string manipulation
 
 ## 📁 Project Files
 
-| File | Description |
-|------|-------------|
-| `data_cleaning.sql` | Contains all SQL queries used for the data cleaning process |
-| `layoffs_cleaned.csv` | Final cleaned dataset |
-| `README.md` | Project documentation |
+| File                   | Description                               |
+| ---------------------- | ----------------------------------------- |
+| `data_cleaning.sql`    | SQL queries for cleaning the raw dataset  |
+| `layoffs_cleaned.csv`  | Cleaned dataset                           |
+| `data_exploration.sql` | SQL queries for exploratory data analysis |
+| `README.md`            | Project documentation                     |
 
 ## 🎯 Project Outcome
 
-The raw layoffs dataset was cleaned, standardized, and prepared for further exploratory data analysis and visualization.
-
-The cleaned dataset can be used for creating dashboards and performing further analysis using tools such as Power BI.
+Cleaned and standardized the layoffs dataset and performed exploratory analysis using SQL to identify workforce reduction patterns and trends.
 
 ## 🚀 Future Scope
 
-- Perform exploratory data analysis using SQL
-- Create visualizations using Power BI
-- Identify layoffs trends by company, industry, country, and year
-- Build an interactive Power BI dashboard
+* Create an interactive dashboard using Power BI.
+* Visualize layoffs by company, industry, country, and year.
+* Develop additional insights from the cleaned dataset.
 
 ## 👩‍💻 Author
 
